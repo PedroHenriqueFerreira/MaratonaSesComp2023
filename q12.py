@@ -1,13 +1,15 @@
 res = []
 
 while True:
-    values = [v[::-1] for v in input('').split(' ')]
+    values = [v for v in input('').split(' ')]
     values.sort()
     
     if values[0] == '0' and values[1] == '0':
         break
     
     values[0] = values[0].zfill(len(values[1]))
+    
+    values = [v[::-1] for v in values]
     
     carrys = []
     
