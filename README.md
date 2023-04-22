@@ -10,7 +10,7 @@ Primeiramente é necessário ter o `python` em sua máquina.
 
 ## Execução
 ```
-$ python atv1.py
+$ python atv01.py
 ```
 
 ## Tecnologias utilizadas
