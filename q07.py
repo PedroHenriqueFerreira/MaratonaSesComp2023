@@ -1,11 +1,11 @@
 n, m = [int(v) for v in input('').split(' ')]
 
-matriz = []
+matrix = []
 
 for i in range(n):
     line = [int(v) for v in input('').split(' ')]
     
-    matriz.append(line)
+    matrix.append(line)
 
 res = []
 
@@ -17,20 +17,20 @@ for i in range(n):
         if j == 0 or j == m - 1:
             continue
         
-        if matriz[i][j] != 42:
+        if matrix[i][j] != 42:
             continue
         
-        prev_line = matriz[i - 1]
+        prev_line = matrix[i - 1]
         
         if prev_line[j - 1] != 7 or prev_line[j] != 7 or prev_line[j + 1] != 7:
             continue
         
-        next_line = matriz[i + 1]
+        next_line = matrix[i + 1]
         
         if next_line[j - 1] != 7 or next_line[j] != 7 or next_line[j + 1] != 7:
             continue
         
-        if matriz[i][j - 1] != 7 or matriz[i][j + 1] != 7:
+        if matrix[i][j - 1] != 7 or matrix[i][j + 1] != 7:
             continue
         
         res.append(i + 1)

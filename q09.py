@@ -6,27 +6,27 @@ while True:
     if n == 0 and m == 0:
         break
     
-    matriz = []
+    matrix = []
     
     for i in range(n):
         line = [bool(int(v)) for v in input('').split(' ')]
-        matriz.append(line)
+        matrix.append(line)
     
     rule_1 = True
     rule_4 = True
     
     for i in range(n):
-        if matriz[i].count(True) == m:
+        if matrix[i].count(True) == m:
             rule_1 = False
             
-        if matriz[i].count(True) == 0:
+        if matrix[i].count(True) == 0:
             rule_4 = False
     
     rule_2 = True
     rule_3 = True
     
     for j in range(m):
-        col = [matriz[i][j] for i in range(n)]
+        col = [matrix[i][j] for i in range(n)]
         
         if col.count(True) == 0:
             rule_2 = False

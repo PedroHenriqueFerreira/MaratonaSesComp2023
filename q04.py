@@ -1,11 +1,11 @@
 n = int(input(''))
 
-cedulas = [100, 50, 20, 10, 5, 2, 1]
+bills = [100, 50, 20, 10, 5, 2, 1]
 
 print('')
 
-for cedula in cedulas:
-    qtd = n // cedula
-    n -= qtd * cedula
+for bill in bills:
+    qtd = n // bill
+    n -= qtd * bill
     
-    print(f'{qtd} nota(s) de R$ {cedula},00')
+    print(f'{qtd} nota(s) de R$ {bill},00')

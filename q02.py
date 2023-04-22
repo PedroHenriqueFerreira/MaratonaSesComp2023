@@ -1,20 +1,20 @@
 n = int(input(''))
 
-pares = []
-impares = []
+even = []
+odd = []
 
 for i in range(n):
     v = int(input(''))
     
     if v % 2 == 0:
-        pares.append(v)
+        even.append(v)
     else:
-        impares.append(v)
+        odd.append(v)
         
-pares.sort()
-impares.sort(reverse=True)
+even.sort()
+odd.sort(reverse=True)
 
 print('')
 
-for v in [*pares, *impares]:
+for v in [*even, *odd]:
     print(v)
