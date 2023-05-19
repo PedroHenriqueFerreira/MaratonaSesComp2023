@@ -1,4 +1,4 @@
-## Agenda de contatos em Python
+## Maratona SesComp 2023
 ![Concluido](http://img.shields.io/static/v1?label=STATUS&message=CONCLUÌDO&color=GREEN&style=for-the-badge)
 
 ## Descrição do repositório
